@@ -12,6 +12,17 @@ height = gets
 
 # .....
 
-puts "您的 BMI 是: _________"
+bmi = ( weight/(height * height) ).to_f
 
-puts "您的 BMI 结果是: _________(过轻或正常或过重)"
+suggestion =
+  if bmi < 18.5
+    "过轻"
+  elsif bmi >= 24
+    "过重"
+  else
+    "正常"
+  end
+
+puts "您的 BMI 是: #{bmi}"
+
+puts "您的 BMI 结果是:#{suggestion}(过轻或正常或过重)"

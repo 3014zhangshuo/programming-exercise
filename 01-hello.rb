@@ -4,5 +4,7 @@ print "请输入你的名字，然后按 Enter: "
 your_name = gets
 
 # ...
-
-puts "(请替换成最后的答案)"
+#puts 会输出变量在萤幕上，并且有换行
+#print 也会输出变量在萤幕，不会换行
+#gets 可以从键盘拿到输入的值。
+puts "Hello, #{your_name}"

@@ -9,8 +9,11 @@ arr = [
 ]
 
 # ....
+sort_arr = arr.reject { |item| item["age"] < 18 }
+            .sort{ |item| item["age"] }
+            .map { |item| item["name"] }.join(", ")
 
-puts "所有成年人，并由小到大: _________"
+puts "所有成年人，并由小到大: #{sort_arr}"
 
 # 答案应该是
 #[

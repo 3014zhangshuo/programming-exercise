@@ -8,5 +8,12 @@ people = gets
 
 # .....
 
-puts "每人可分得几片: _________ 片"
-puts "还剩下几片: _________ 片"
+# share = pizzas.to_i / people.to_i
+#
+# left = pizzas.to_i - share * people.to_i
+
+a = pizzas.to_i / people.to_i
+b = pizzas.to_i % people.to_i
+
+puts "每人可分得几片: #{a} 片"
+puts "还剩下几片: #{b}片"

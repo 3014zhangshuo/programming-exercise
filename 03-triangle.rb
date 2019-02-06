@@ -8,4 +8,6 @@ b = gets
 
 # .....
 
-puts "直角三角形的面积是: _________"
+triangle_area = 1/2.to_f * ( a.to_f * b.to_f )
+
+puts "直角三角形的面积是: __#{triangle_area}_______"
